@@ -15,10 +15,7 @@ Step 1: Create docker network
 
     docker network create mongo-network 
 
-    ![network](developing-with-docker/app/images/Screenshot 2024-04-23 at 8.19.06 PM.png)
-
-    To see the network created use 
-    !
+![network](https://github.com/vandeet0704/Cloud-IA/blob/main/app/images/Screenshot%202024-04-23%20at%201.29.07%20PM.png)
 
 Step 2: start mongodb 
 
