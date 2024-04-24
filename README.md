@@ -15,6 +15,11 @@ Step 1: Create docker network
 
     docker network create mongo-network 
 
+    ![network](developing-with-docker/app/images/Screenshot 2024-04-23 at 8.19.06 PM.png)
+
+    To see the network created use 
+    !
+
 Step 2: start mongodb 
 
     docker run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongodb --net mongo-network mongo    
