@@ -1,4 +1,4 @@
-## demo app - developing with Docker
+![Screenshot 2024-04-23 at 1 29 07 PM](https://github.com/vandeet0704/Cloud-IA/assets/97273401/5b75e69d-6ec6-44bb-807f-558e39dc7546)## demo app - developing with Docker
 
 This demo app shows a simple user profile app set up using 
 - index.html with pure js and css styles
@@ -10,7 +10,8 @@ All components are docker-based
 Step 0: Get source code form the following repository:
     
     https://gitlab.com/nanuchi/developing-with-docker
-![git-clone](https://github.com/vandeet0704/Cloud-IA/blob/main/app/images/Screenshot%202024-04-23%20at%201.29.07%20PM.png)
+
+![Screenshot 2024-04-23 at 1 29 07 PM](https://github.com/vandeet0704/Cloud-IA/assets/97273401/bdc2092b-d7ea-447f-8578-e6ea9a944375)
 
 ### With Docker
 
@@ -20,15 +21,15 @@ Step 1: Create docker network
 
     docker network create mongo-network 
 
-![create-network](https://github.com/vandeet0704/Cloud-IA/blob/main/app/images/Screenshot%202024-04-23%20at%208.19.06%20PM.png)
+![Screenshot 2024-04-23 at 8 19 06 PM](https://github.com/vandeet0704/Cloud-IA/assets/97273401/468d1606-7b99-499a-a6f4-242ec7697584)
 
-![list_networks](https://github.com/vandeet0704/Cloud-IA/blob/main/app/images/Screenshot%202024-04-23%20at%208.19.29%20PM.png)
+![Screenshot 2024-04-23 at 8 19 29 PM](https://github.com/vandeet0704/Cloud-IA/assets/97273401/1eddfbfa-fec6-46f8-82ae-306e87458558)
 
 Step 2: start mongodb 
 
     docker run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongodb --net mongo-network mongo   
 
-![mongo-image](https://github.com/vandeet0704/Cloud-IA/blob/main/app/images/Screenshot%202024-04-23%20at%208.38.00%20PM.png)
+![Screenshot 2024-04-23 at 8 38 00 PM](https://github.com/vandeet0704/Cloud-IA/assets/97273401/15ef6145-fd84-4a34-9c31-d193d7b992bc)
 
 Step 3: start mongo-express
     
@@ -36,16 +37,16 @@ Step 3: start mongo-express
 
 _NOTE: creating docker-network in optional. You can start both containers in a default network. In this case, just emit `--net` flag in `docker run` command_
 
-![express-image](https://github.com/vandeet0704/Cloud-IA/blob/main/app/images/Screenshot%202024-04-23%20at%208.38.47%20PM.png)
+![Screenshot 2024-04-23 at 8 38 47 PM](https://github.com/vandeet0704/Cloud-IA/assets/97273401/1d5df3b3-2eb3-44e6-a67a-438951106fe1)
 
 Step 4: open mongo-express from browser
 
     http://localhost:8081
-![login](https://github.com/vandeet0704/Cloud-IA/blob/main/app/images/Screenshot%202024-04-23%20at%208.43.31%20PM.png)
+![Screenshot 2024-04-23 at 8 43 31 PM](https://github.com/vandeet0704/Cloud-IA/assets/97273401/2c32dfde-5425-4f6c-bf3c-9044de8358d1)
 
 Step 5: create `user-account` _db_ and `users` _collection_ in mongo-express
 
-![create-db](https://github.com/vandeet0704/Cloud-IA/blob/main/app/images/Screenshot%202024-04-23%20at%208.44.37%20PM.png)
+![Screenshot 2024-04-23 at 8 44 37 PM](https://github.com/vandeet0704/Cloud-IA/assets/97273401/f9f79717-7959-4958-afa2-60ec46a6822f)
 
 Step 6: Start your nodejs application locally - go to `app` directory of project 
 
@@ -57,7 +58,7 @@ Step 7: Access you nodejs application UI from browser
 
     http://localhost:3000
 
-![app](https://github.com/vandeet0704/Cloud-IA/blob/main/app/images/Screenshot%202024-04-23%20at%2010.35.47%20PM.png)
+![Screenshot 2024-04-23 at 10 35 47 PM](https://github.com/vandeet0704/Cloud-IA/assets/97273401/2406a777-ca86-43d9-8582-f4775f6e17b6)
 
 ### With Docker Compose
 
@@ -89,4 +90,3 @@ Step 5: access the nodejs application from browser
 
 
 The dot "." at the end of the command denotes location of the Dockerfile.
-# Initial commit
