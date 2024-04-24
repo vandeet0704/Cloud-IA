@@ -1,4 +1,4 @@
-![Screenshot 2024-04-23 at 1 29 07 PM](https://github.com/vandeet0704/Cloud-IA/assets/97273401/5b75e69d-6ec6-44bb-807f-558e39dc7546)## demo app - developing with Docker
+## demo app - developing with Docker
 
 This demo app shows a simple user profile app set up using 
 - index.html with pure js and css styles
